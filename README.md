@@ -9,7 +9,7 @@ path:
 
 # Funcionalidades 
 Cadastro de dados bancarios campos obrigátorios, autenticação obrigatória:
-Header token = ""
+Adicionar no header o token = ""
 {
     "nome_banco": "",
     "tipo_conta": "",
@@ -19,10 +19,10 @@ Header token = ""
 }
 
 Consultar dados bancarios, autenticação obrigatória, retorna todos as contas para obter os ids afim de utilizar para a atualização:
-Header token = ""
+Adicionar no header o header token = ""
 
 Atualização de dados bancários, autenticação obrigatória, pode ser atualizado qualquer campo id obrigatorio e deve ser o retornado na consulta:
-header token = ""
+Adicionar no header o header token = ""
 
 {
     "id" : "",
