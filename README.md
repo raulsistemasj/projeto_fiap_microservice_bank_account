@@ -19,10 +19,10 @@ Adicionar no header o token = ""
 }
 
 Consultar dados bancarios, autenticação obrigatória, retorna todos as contas para obter os ids afim de utilizar para a atualização:
-Adicionar no header o header token = ""
+Adicionar no header o token = ""
 
 Atualização de dados bancários, autenticação obrigatória, pode ser atualizado qualquer campo id obrigatorio e deve ser o retornado na consulta:
-Adicionar no header o header token = ""
+Adicionar no header o token = ""
 
 {
     "id" : "",
