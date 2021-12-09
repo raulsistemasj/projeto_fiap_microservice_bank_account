@@ -7,7 +7,7 @@ path:
 /api/cliente/atualizar/conta
 /api/health
 
-#Install e subida do servidor
+# Install e subida do servidor
 baixar o projeto, abrir a pasta service_user_bank no vscode, abra o terminal e execute o comando nmp install, para subir a aplicação execute o comando nodemom.
 Caso não tenha o nodemon instalado na maquina execute o npm install nodemon.
 
