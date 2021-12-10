@@ -3,6 +3,7 @@ const router = express.Router();
 const bodyParser = require('body-parser');
 const Usuario = require("../model/user");
 const Bank = require("../model/userbank");
+const Valid = require("../utils/valid")
 
 //Importando nossa function de acesso a dados mongoose
 const mongoose = require("../database/mongoose");
@@ -36,9 +37,11 @@ router.use(bodyParser.json());
 
     exports.atualizar = (req,res)=>{
 
+        if(req.body.id == undefined || Valid.isEmpty(req.body.id)) return res.status(400).send('Id é campo obrigatório!')
+
         Bank.findByIdAndUpdate(req.body.id,req.body,{new:true},(erro,dados)=>{
             if(erro) return res.status(400).send('Erro ao atualizar conta')
-            res.status(204).send('Atualizado com sucesso')
+            res.status(200).send('Atualizado com sucesso')
         })
     }
 
